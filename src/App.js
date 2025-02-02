@@ -166,7 +166,7 @@ function App() {
                     {loading ? (
                       <><i className="fas fa-spinner fa-spin"></i> Grading...</>
                     ) : (
-                      <>Grade Answers <i className="fas fa-check-circle"></i></>
+                     <>Grade Answers <i className="fas fa-check-circle"></i></>
                     )}
                   </button>
                   {error && <div className="error-toast">{error}</div>}
