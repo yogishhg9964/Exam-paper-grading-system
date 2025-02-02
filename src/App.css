@@ -402,8 +402,8 @@ body {
   color: var(--primary-color);
   padding: 12px 24px;
   border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
+  text-decoration: none;   
+  font-weight: 600; 
   display: inline-block;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);

@@ -177,7 +177,7 @@ function App() {
                     <h2>Grading Results</h2>
                     <div className="results-table">
                       <table>
-                        <thead>
+                        <thead>   
                           <tr>
                             <th>Question</th>
                             <th>Marks Awarded</th>
