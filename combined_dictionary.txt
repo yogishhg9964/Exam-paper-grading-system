@@ -1,0 +1,167 @@
+{
+    "questions": {
+        "1.1": {
+            "question": "What layer of the \ud835\udc42\ud835\udc46\ud835\udc3c model does \ud835\udc47\ud835\udc36\ud835\udc43 operate at?",
+            "marks": 1
+        },
+        "1.2": {
+            "question": "What is the main purpose of \ud835\udc47\ud835\udc36\ud835\udc43?",
+            "marks": 2
+        },
+        "1.3": {
+            "question": "What is the main di erence between \ud835\udc48\ud835\udc37\ud835\udc43 and \ud835\udc47\ud835\udc36\ud835\udc43?",
+            "marks": 1
+        },
+        "1.4": {
+            "question": "What is the primary advantage of \ud835\udc48\ud835\udc37\ud835\udc43 over \ud835\udc47\ud835\udc36\ud835\udc43?",
+            "marks": 2
+        },
+        "1.5": {
+            "question": "In networking, what is the purpose of a socket?",
+            "marks": 1
+        },
+        "1.6": {
+            "question": "How do sockets facilitate communication between processes in networking?",
+            "marks": 2
+        },
+        "1.7": {
+            "question": "What is the purpose of the fork() system call in Unix-like operating systems?",
+            "marks": 1
+        },
+        "1.8": {
+            "question": "Give the prototype of exec function call.",
+            "marks": 2
+        },
+        "1.9": {
+            "question": "Which among \ud835\udc47\ud835\udc36\ud835\udc43/\ud835\udc48\ud835\udc37\ud835\udc43 is suitable for implementation of \ud835\udc37\ud835\udc41\ud835\udc46?",
+            "marks": 1
+        },
+        "1.10": {
+            "question": "Give an example of a socket option.",
+            "marks": 2
+        },
+        "1.11": {
+            "question": "De\ufb01ne a stream cipher.",
+            "marks": 1
+        },
+        "1.12": {
+            "question": "What distinguishes a stream cipher from a block cipher?",
+            "marks": 2
+        },
+        "1.13": {
+            "question": "What is the primary purpose of Transport Layer Security ( \ud835\udc47\ud835\udc3f\ud835\udc46)?",
+            "marks": 2
+        },
+        "2a": {
+            "question": ". Explain the characteristics and use cases of \ud835\udc48\ud835\udc37\ud835\udc43 (User Datagram Protocol).",
+            "marks": 8
+        },
+        "2b": {
+            "question": ". Explain the role and functionality of sockets in network programming.",
+            "marks": 8
+        },
+        "2c": {
+            "question": ". Explain the role and functionality of sockets in network programming.",
+            "marks": 8
+        },
+        "3a": {
+            "question": ". Explain the architecture of \ud835\udc47\ud835\udc36\ud835\udc43 client/server with a neat diagram.",
+            "marks": 8
+        },
+        "3b": {
+            "question": ". Explain the following functions with a function prototypesgetsockname, getpeername.",
+            "marks": 8
+        },
+        "4a": {
+            "question": ". Explain the implementation of concurrent functions in TCP client/server.",
+            "marks": 8
+        },
+        "5a": {
+            "question": ". Explain the function prototypes \u2013 getsockopt, setsockopt.",
+            "marks": 8
+        },
+        "5b": {
+            "question": ". With a neat diagram, explain the function of \ud835\udc48\ud835\udc37\ud835\udc43 Echo server and \ud835\udc48\ud835\udc37\ud835\udc43 echo client.",
+            "marks": 8
+        },
+        "6a": {
+            "question": ". Explain the function prototypes \u2013 sendto, receivefrom.",
+            "marks": 8
+        },
+        "6b": {
+            "question": ". Illustrate the implementation of \ud835\udc37\ud835\udc41\ud835\udc46 using \ud835\udc48\ud835\udc37\ud835\udc43 client/server architecture.",
+            "marks": 8
+        },
+        "7a": {
+            "question": ". Discuss one advantage and one disadvantage of stream ciphers compared to block ciphers.",
+            "marks": 8
+        },
+        "7b": {
+            "question": ". Explain the concept of a public-key cryptography system and its key components.",
+            "marks": 8
+        },
+        "8a": {
+            "question": ". Explain the concept of Transport Layer Security ( \ud835\udc47\ud835\udc3f\ud835\udc46) and its importance in securing communication over the Internet.",
+            "marks": 8
+        },
+        "8b": {
+            "question": ". Discuss one common wireless security threat and its potential impact on network security.",
+            "marks": 8
+        }
+    },
+    "expected_answers": {
+        "1.1": "TCP operates at the Transport Layer, providing end -to-end communication. 01 1 1",
+        "1.2": "The main purpose of TCP is to establish a reliable connection and ensure data arrives error -free and in order. 02 2 1",
+        "1.3": "The main difference between UDP and TCP is that UDP is stateless and faster, while TCP is stateful and reliable. 01 2 1",
+        "1.4": "The primary advantage of UDP over TCP is its simplicity and reduced resource usage, ideal for scenarios where speed matters more than reliability. 02 2 2",
+        "1.5": "In networking, a socket is used as a communication interface for establishing connections between applications across networks. 01 1 1",
+        "1.6": "Sockets facilitate process communication by providing a framework for transmitting data streams between devices over a network. 02 2 3",
+        "1.7": "The fork() system call creates a child process that runs concurrently with the parent process, duplicating its memory space. 01 2 4",
+        "1.8": "The prototype of the exec function family includes: int execvp(const char *file, char *const argv[]); 02 3 1",
+        "1.9": "UDP is better suited for DNS because it avoids the latency caused by connection setup in TCP . 01 1 2",
+        "1.10": "A socket option example is SO_KEEPALIVE, used to check if the connection is still active. 02 2 3",
+        "1.11": "A stream cipher processes data in a continuous stream, encrypting one symbol at a time, making it suitable for real -time encryption. 01 1 2",
+        "1.12": "Stream ciphers differ from block ciphers in that stream ciphers encrypt data bit -by-bit, while block ciphers work with chunks of data. 02 2 3",
+        "1.13": "TLS ensures secure communication by encrypting data, authenticating both parties, and protecting against tampering. 02 1 4 Part B",
+        "2a": ". The characteristics of UDP include: Connectionless protocol: No connection is established before data transmission. Low latency: Minimal overhead allows fast data delivery. Unreliable: No acknowledgment or retransmission of lost data. Use cases: Real -time applications like video streaming, VoIP , and gaming. 08 1 1",
+        "2b": ". The role and functionality of sockets in network programming include: Communication endpoints: Provide a mechanism for exchanging data between processes over a network. Protocols: Support protocols like TCP and UDP . Operations: Allow send/receive operations using system calls like send(), recv(). 08 2 1",
+        "2c": ". The role and functionality of sockets in network programming include: Communication endpoints: Provide a mechanism for exchanging data between processes over a network. Protocols: Support protocols like TCP and UDP . Operations: Allow send/receive operations using system calls like send(), recv(). 08 2 1",
+        "3a": ". The architecture of TCP client/server includes: Client: Establishes connection to the server. Server: Listens for client requests and processes them. Steps: Socket creation, binding, listening, accepting connections, and communication. 08 1 1",
+        "3b": ". The function prototypes: int getsockname(int sockfd, struct sockaddr *addr, socklen_t *addrlen);: Retrieves the local address of a socket. int getpeername(int sockfd, struct sockaddr *addr, socklen_t *addrlen);: Retrieves the remote address of a connected socket. 08 2 1",
+        "4a": ". Implementation of concurrent functions in TCP client/server involves using: Multiple threads/processes: Handle multiple client connections. Select/poll mechanisms: Monitor multiple sockets for activity. 08 1 2",
+        "4b": ". The TCP client/server echo function works by: Server: Receives data from the client and sends it back. Client: Sends data to the server and waits for the echoed response. 08 2 2",
+        "5a": ". The function prototypes: int getsockopt(int sockfd, int level, int optname, void *optval, socklen_t *optlen);: Retrieves options for a socket. int setsockopt(int sockfd, int level, int optname, const void *optval, socklen_t optlen);: Sets options for a socket. 08 1 3",
+        "5b": ". UDP echo server/client involves: Server: Listens for messages and echoes them back. Client: Sends a message to the server and receives the echoed response. 08 2 3",
+        "6a": ". Function prototypes: ssize_t sendto(int sockfd, const void *msg, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen);: Sends data to a specified address. ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *src_addr, socklen_t *addrlen);: Receives data from a specified address. 08 1 3",
+        "6b": ". Implementation of DNS using UDP client/server includes: Client: Sends a query to the server using UDP . Server: Processes the query and sends back the response. 08 2 4",
+        "7a": ". Advantage of stream ciphers: Lower latency. Disadvantage: Vulnerable to key reuse. 08 1 4 7.b Public -key cryptography system: Uses two keys (public and private) for encryption and decryption. Components: Key pair, encryption algorithm, and digital signatures. 08 2 4",
+        "8a": ". TLS ensures secure communication by: Encrypting data: Prevents eavesdropping. Authenticating parties: Verifies identities. Integrity: Detects tampering. 08 2 3",
+        "8b": "A common wireless security threat is eavesdropping, which involves intercepting wireless communication to extract sensitive data. 08 2 2"
+    },
+    "student_answers": {
+        "1.1": "] TCP operates",
+        "1.2": "The main purpose of this",
+        "1.3": "The main difference",
+        "1.4": "The primary advantage",
+        "1.5": "In networking",
+        "1.6": "Sockets",
+        "1.7": "The fork()",
+        "1.8": "Prototype",
+        "1.9": "UDP is better",
+        "1.10": "Socket option",
+        "1.11": "A Stream",
+        "1.12": "Stream ciphers",
+        "1.13": "PART B 2 a Connection less protocol 2 b the role and functionality 2 c The role and 3 a",
+        "3b": "function prototypes",
+        "4a": "implementation of Concassent functions:",
+        "4b": "TCP is not better",
+        "5a": "the function prototype",
+        "5b": "UDP is not good for",
+        "6a": "function prototypes",
+        "6b": "Client Server Model",
+        "7a": "",
+        "7b": "",
+        "8a": "Encrypting data",
+        "8b": "wireless Security"
+    }
+}

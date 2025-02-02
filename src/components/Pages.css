@@ -1,0 +1,139 @@
+.page-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header-underline {
+  width: 100px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+/* About Page Styles */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: translateY(-10px);
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Help Page Styles */
+.help-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.help-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.help-card {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid var(--primary-color);
+  background: var(--bg-light);
+  border-radius: 0 8px 8px 0;
+}
+
+.faq-list details {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--bg-light);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.faq-list details p {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.contact-support {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.support-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.support-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-grid,
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    order: -1;
+  }
+}
